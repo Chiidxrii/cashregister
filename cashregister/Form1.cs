@@ -135,6 +135,11 @@ namespace cashregister
             Refresh();
             Thread.Sleep(500);
 
+            //reset inputs
+            guitarInput.ResetText();
+            tunersInput.ResetText();
+            stringsInput.ResetText();
+
             //reset outputs
             subtotalOutput.Text = $"";
             taxamountOutput.Text = $"";
